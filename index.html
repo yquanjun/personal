@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Be my +1?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <div id="question">
+            <img id="gif" class="gif" src="https://media1.tenor.com/m/hlr3kptkdu4AAAAC/bubu-dudu.gif" alt="Bubu and Dudu jumping with a heart">
+            <h1>Do you want to be my +1?</h1>
+            <p class="subtitle"><button id="terms-link" class="terms-link" type="button">T&amp;C applies</button></p>
+
+            <div class="buttons">
+                <button id="yes" class="button yes">Yes</button>
+                <button id="no" class="button no">No</button>
+            </div>
+        </div>
+
+        <img id="answer-gif" class="gif answer-gif" hidden src="https://media.tenor.com/TReOhQcXVuEAAAAi/kiss.gif" alt="Bubu and Dudu kissing">
+        <p id="answer" class="answer" hidden>Thank you for accepting the contract to be my slave and give me all the hugs and kisses you have</p>
+    </main>
+
+    <div id="bubble" class="bubble" role="status" aria-live="polite"></div>
+
+    <dialog id="terms" class="terms">
+        <div class="terms-content">
+        <h2>Terms &amp; Conditions</h2>
+        <div class="terms-body">
+            <img class="gif" src="https://media1.tenor.com/m/3XxTax1E5-oAAAAC/bubu-dudu.gif" alt="Bubu scratching Dudu's back">
+            <p>Be my personal scratcher</p>
+            <img class="gif" src="https://media1.tenor.com/m/9qZ1RvHNZJ4AAAAC/bubu-dudu.gif" alt="Bubu and Dudu">
+            <p>And I will scratch you also</p>
+        </div>
+        <form method="dialog">
+            <button class="button yes">Close</button>
+        </form>
+        </div>
+    </dialog>
+
+    <dialog id="confirm" class="terms">
+        <div class="terms-content">
+            <h2 id="confirm-question"></h2>
+            <div class="buttons">
+                <button id="confirm-yes" class="button yes" type="button">Yes</button>
+                <button id="confirm-no" class="button no" type="button">No</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
